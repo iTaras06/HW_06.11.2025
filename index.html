@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body {
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        display: flex;
+        justify-content: center;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: repeat(3, 350px); 
+        gap: 40px; 
+        padding: 50px 70px 80px 50px;
+        margin: 100px;
+        width: auto;
+        height: auto;
+        background-color: rgb(165, 215, 226);
+        font-size: 1.8rem;
+    }
+
+    .column {
+        display: flex;
+        flex-direction: column; 
+        gap: 40px; 
+    }
+
+    .block {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+    }
+
+    .top {
+        background-color: #ccc;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        color: #929292;
+        font-size: 2.5rem;
+    }
+
+    .bottom {
+        padding: 15px 15px 25px 25px;
+        background-color: white;
+        font-weight:500;
+        color: #5c5c5c;
+    }
+
+    .block1 .top { height: 150px; }
+    .block2 .top { height: 100px; }
+    .block3 .top { height: 100px; }
+    .block4 .top { height: 220px; }
+    .block5 .top { height: 230px; }
+    .block6 .top { height: 350px; }
+    .block7 .top { height: 100px; }
+    .block8 .top { height: 150px; }
+    .block9 .top { height: 150px; }
+</style>
+</head>
+
+<body>
+    <main>
+
+
+        <div class="column">
+            <div class="block block1">
+                <div class="top">350 x 150</div>
+                <div class="bottom">
+                    <h4>Title</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut facilisis purus sed ipsum rhoncus, aliquet feugiat elit euismod.</p>
+                </div>
+            </div>
+            
+            <div class="block block4">
+                <div class="top">350 x 220</div>
+                <div class="bottom">
+                    <p>Aenean feugiat dui et libero consectetur hendrerit.</p>
+                </div>
+            </div>
+
+            <div class="block block7">
+                <div class="top">350 x 100</div>
+                <div class="bottom">
+                    <h4>Title</h4>
+                    <p>Mauris nec purus nec ligula euismod convallis. Vivamus ac tortor vel quam viverra tristique.</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="column">
+            <div class="block block2">
+                <div class="top">350 x 100</div>
+                <div class="bottom">
+                    <p>Aliquam ornare nulla a velit vehicula, sed dignissim nunc pharetra. Fusce in dolor eu metus cursus imperdiet.</p>
+                </div>
+            </div>
+
+            <div class="block block5">
+                <div class="top">350 x 230</div>
+                <div class="bottom">
+                    <h4>The title</h4>
+                    <p>In ultrices lorem id consectetur tempus, Mauris tristique enim in hendrerit dapibus.</p>
+                </div>
+            </div>
+
+            <div class="block block8">
+                <div class="top">350 x 150</div>
+                <div class="bottom">
+                    <p>Nulla ut justo iaculis, faucibus tortor non, blandit tortor. Quisque id lectus et ipsum bibendum mattis vitae sagittis magna.</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="column">
+            <div class="block block3">
+                <div class="top">350 x 100</div>
+                <div class="bottom">
+                    <h4>A little longer title</h4>
+                    <p>Aenean accumsan turpis gravida feugiat molestie. Aliquam ornare nulla a velit vehicula, sed dignissim nunc pharetra.</p>
+                </div>
+            </div>
+
+            <div class="block block6">
+                <div class="top">350 x 350</div>
+                <div class="bottom">
+                    <h4>A title</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut facilisis purus sed ipsum rhoncus, aliquet feugiat elit euismod.</p>
+                </div>
+            </div>
+
+            <div class="block block9">
+                <div class="top">350 x 150</div>
+                <div class="bottom">
+                    <p>Vivamus ac tortor vel quam viverra tristique. Curabitur suscipit est non mattis volutpat.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
